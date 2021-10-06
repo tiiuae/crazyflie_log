@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+		<link rel="stylesheet" href="/css/main.css" />
+		{% if js_resources %}
+		    {{ js_resources|indent(4)|safe }}
+		    {{ css_resources|indent(4)|safe }}
+		{% endif %}
+		{% if plots_script %} {{ plots_script | safe}} {% endif %}
+		<title>Crazyflie Flight Review</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="https://via.placeholder.com/64"
+						class="logo" />
+					<span class="nav-extra">Crazyflie Flight Review</span></a>
+				</div>
+				<div class="nav-right">
+					<a href="/">Upload Log</a>
+				</div>
+			</div>

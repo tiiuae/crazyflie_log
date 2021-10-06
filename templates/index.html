@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+<div class="content">
+	<h2>Upload log file</h2>
+	<br/>
+	<p>You may upload a Crazyflie log file for plotting and flight analisys.</p>
+	<div class="col-5">
+		<form method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="file">Log File:</label>
+				<input type="file" id="file" name="file" required="1">
+			</div>
+			<br/>
+			<button type="submit" class="btn">Upload →</button>
+		</form>
+	</div>
+</div>
+{% include 'footer.html' %}
