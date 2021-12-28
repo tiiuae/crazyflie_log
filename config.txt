@@ -3,7 +3,7 @@
 log   # file name
 1     # enable on startup (0/1)
 on:fixedFrequency
-250     # frequency
+100     # frequency
 1     # mode (0: disabled, 1: synchronous stabilizer, 2: asynchronous)
 acc.x
 acc.y
@@ -21,6 +21,46 @@ stabilizer.thrust
 ctrltarget.roll
 ctrltarget.pitch
 ctrltarget.yaw
+
+controller.cmd_thrust
+controller.cmd_roll
+controller.cmd_pitch
+controller.cmd_yaw
+controller.r_roll
+controller.r_pitch
+controller.r_yaw
+
+controller.accelz
+controller.actuatorThrust
+controller.roll
+controller.pitch
+controller.yaw
+controller.rollRate
+controller.pitchRate
+controller.yawRate
+controller.ctr_yaw
+
+crtp.rxRate
+crtp.txRate
+
+posCtl.targetVX
+posCtl.targetVY
+posCtl.targetVZ
+
+posCtl.targetX
+posCtl.targetY
+posCtl.targetZ
+
+posCtl.bodyVX
+posCtl.bodyVY
+
+posCtl.bodyX
+posCtl.bodyY
+
+ext_pos.X
+ext_pos.Y
+ext_pox.Z
+
 range.zrange
 pm.vbat
 sys.isFlying
